@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+    <link rel="stylesheet" href="muscle.css">
+</head>
+<body>
+    <h1>Select Targeted Muscles</h1>
+    <div class="muscle-group">
+        <button onclick="showExercises('chest')">Chest</button>
+        <button onclick="showExercises('legs')">Legs</button>
+        <button onclick="showExercises('back')">Back</button>
+        <button onclick="showExercises('arms')">Arms</button>
+        <button onclick="showExercises('shoulders')">Shoulders</button>
+    </div>
+
+    <div id="exercises-section" class="hidden">
+        <h2 id="muscle-title"></h2>
+        <div class="workout-level">
+            <h3>Beginner</h3>
+            <div id="beginner-workout"></div>
+        </div>
+        <div class="workout-level">
+            <h3>Intermediate</h3>
+            <div id="intermediate-workout"></div>
+        </div>
+        <div class="workout-level">
+            <h3>Advanced</h3>
+            <div id="advanced-workout"></div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+    <script src="server2.js"></script>
+</body>
+</html>

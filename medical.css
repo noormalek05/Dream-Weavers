@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url('Untitled\ design\ \(1\).jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    color: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    padding: 2rem;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #ff1515f0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #ff1515f0;
+    
+}
+
+#dietPlanOutput {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #222;
+    border-radius: 5px;
+    text-align: left;
+    color: #fff;
+    display: none;
+}

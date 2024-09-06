@@ -1,0 +1,61 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    color: #f9f9f9;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.muscle-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.muscle {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+    padding: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.muscle h2 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.muscle:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    color: #f9f9f9;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

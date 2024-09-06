@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Blog</title>
+    <link rel="stylesheet" href="mecia.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <h1>Post Your Blog</h1>
+                <p>Let your voice be heard.</p>
+            </div>
+            
+            <div id="user-verification">
+                <label for="certification-code" class="input-label">Enter Certification Code</label>
+                <input type="password" id="certification-code" class="input-field" placeholder="Enter your code">
+                <button id="verify-btn" class="btn primary-btn">Verify</button>
+            </div>
+
+            <div id="blog-form" class="hidden form-container">
+                <form id="post-blog-form">
+                    <label for="title" class="input-label">Blog Title</label>
+                    <input type="text" id="title" class="input-field" placeholder="Enter blog title" required>
+
+                    <label for="content" class="input-label">Blog Content</label>
+                    <textarea id="content" class="input-field textarea" rows="10" placeholder="Write your blog here..." required></textarea>
+
+                    <button type="submit" id="post-btn" class="btn secondary-btn">Post Blog</button>
+                </form>
+            </div>
+
+            <div id="message" class="hidden"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

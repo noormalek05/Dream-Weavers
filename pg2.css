@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('5f76c59c3238e7b17a2f58e48c5383d3.jpg'); /* Update this with your background image URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .options {
+    margin-bottom: 20px;
+  }
+  
+  .option-button {
+    background-color: #ff0000;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .option-button:hover {
+    transform: scale(1.1);
+    background-color: #cc0000;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .muscle-group {
+    margin-bottom: 20px;
+  }
+  
+  .muscle-button, .level-button {
+    background-color: #ff0000;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .muscle-button:hover, .level-button:hover {
+    transform: scale(1.1);
+    background-color: #cc0000;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form label {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  form input {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background: #fffefe;
+    color: white;
+  }
+  
+  form button {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  form button:hover {
+    transform: scale(1.1);
+    background-color: #cc0000;
+  }
+  
+  #exerciseList {
+    margin-top: 20px;
+  }
+  
+  #exercises {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #exercises li {
+    background-color: #444;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #exercises li:hover {
+    background-color: #555;
+  }
+  
+  #exerciseVideo {
+    margin-top: 20px;
+  }
+  
+  video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+  }
+  

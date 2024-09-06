@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+    <link rel="stylesheet" href="back workout.css">
+</head>
+<body>
+    <header>
+        <h1>Fitness Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#back-workouts">Back Workouts</a></li>
+                <li><a href="#workout-plan">Workout Plans</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="back-workouts" class="workout-section">
+        <h2>AI-Generated Back Workouts</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="ai-generated-back-workout.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="workout-plan" class="workout-section">
+        <h2>Workout Plans</h2>
+        <div class="plan-selector">
+            <button onclick="showPlan('beginner')">Beginner Plan</button>
+            <button onclick="showPlan('advanced')">Advanced Plan</button>
+        </div>
+        <div id="workout-display" class="workout-plan">
+            <p>Select a plan to display the workout.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fitness Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="back workout.js"></script>
+</body>
+</html>

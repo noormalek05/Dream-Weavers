@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker Login</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <div class="login-card">
+            <div class="card-header">
+                <h2>Login to Your Fitness Journey</h2>
+                <p>Track your progress and achieve your goals!</p>
+            </div>
+            <!-- Form for login -->
+            <form id="login-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name" class="form-label">Name</label>
+                </div>
+
+                <div class="form-group">
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" id="age" name="age" min="1" max="120" required>
+                    <label for="age" class="form-label">Age</label>
+                </div>
+
+                <div class="form-group">
+                    <div class="height-inputs">
+                        <input type="number" id="feet" name="feet" min="1" max="8" required>
+                        <input type="number" id="inches" name="inches" min="0" max="11" required>
+                    </div>
+                    <label for="height" class="form-label">Height (Feet & Inches)</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" id="weight" name="weight" min="1" max="300" required>
+                    <label for="weight" class="form-label">Weight (kg)</label>
+                </div>
+
+                <!-- Login Button -->
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <p id="form-output"></p>
+        </div>
+    </div>
+
+    <!-- Navigation bar linking to other pages -->
+    <nav class="nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+           
+        </ul>
+    </nav>
+
+    <!-- Link to JavaScript file -->
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event){
+            event.preventDefault(); // Prevent default form submission
+            
+            // Here, you could add form validation or data processing
+            
+            // Redirect to home page
+            window.location.href = "home.html";
+        });
+    </script>
+</body>
+</html>

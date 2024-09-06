@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Diet Plan Generator</title>
+    <link rel="stylesheet" href="medical.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Diet Plan Generator</h1>
+        <p>Enter your medical condition and fitness goal to generate a personalized diet plan.</p>
+        <form id="dietForm">
+            <label for="condition">Medical Condition:</label>
+            <input type="text" id="condition" name="condition" placeholder="e.g., diabetes, hypertension" required>
+
+            <label for="goal">Fitness Goal:</label>
+            <select id="goal" name="goal" required>
+                <option value="" disabled selected>Select your goal</option>
+                <option value="weightLoss">Weight Loss</option>
+                <option value="weightGain">Weight Gain</option>
+                <option value="nutrientIntake">Complete Nutrient Intake</option>
+            </select>
+
+            <button type="submit">Generate Diet Plan</button>
+        </form>
+
+        <div id="dietPlanOutput"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

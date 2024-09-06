@@ -1,0 +1,119 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('7af2f67d5e92f2aecdf6404c00daf357.jpg') no-repeat center center fixed;
+
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #f0f0f0;
+    backdrop-filter: blur(5px); /* Adds a slight blur effect behind the container for readability */
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 600px;
+}
+
+.container {
+    background-color: rgba(42, 42, 42, 0.85); /* Semi-transparent dark background for readability */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.8);
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.header p {
+    text-align: center;
+    font-size: 1rem;
+    color: #bbbbbb;
+}
+
+/* Input Styles */
+.input-label {
+    font-weight: 400;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 1rem;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #8b5cf6;
+    background-color: #3a3a3a;
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+.primary-btn {
+    background-color: #8b5cf6;
+    color: white;
+    border-radius: 30px;
+    padding: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary-btn:hover {
+    background-color: #7c3aed;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+}
+
+/* Calories Display */
+#calories-display {
+    padding-top: 20px;
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+#calories-output {
+    font-size: 1.5rem;
+    color: #4ade80;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

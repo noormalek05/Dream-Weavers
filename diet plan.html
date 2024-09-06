@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrition Calculator</title>
+  <link rel="stylesheet" href="diet plan.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Nutrition Calculator</h1>
+    </div>
+    <div class="form-container">
+      <h2>Enter Your Food Intake</h2>
+      <form id="nutritionForm">
+        <label for="foodName">Food Name:</label>
+        <input type="text" id="foodName" name="foodName" required>
+        
+        <label for="amount">Amount (grams):</label>
+        <input type="number" id="amount" name="amount" required>
+
+        <button type="submit">Calculate</button>
+      </form>
+
+      <div id="results" class="hidden">
+        <h3>Nutrition Information</h3>
+        <p id="calories">Calories: 0</p>
+        <p id="fiber">Fiber: 0g</p>
+        <p id="protein">Protein: 0g</p>
+      </div>
+    </div>
+  </div>
+  <script src="diet plan.js"></script>
+</body>
+</html>

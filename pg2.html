@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Website</title>
+  <link rel="stylesheet" href="pg2.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Select Your Fitness Journey</h1>
+    </div>
+    <div class="options">
+      <button id="workoutPlanBtn" class="option-button">Workout Plans</button>
+      <button id="fitnessTrackerBtn" class="option-button">Fitness Tracker</button>
+    </div>
+    
+    <!-- Workout Plans Section -->
+    <div id="workoutPlans" class="hidden">
+      <h2>Select Muscle Group</h2>
+      <div class="muscle-group">
+        <button class="muscle-button" data-muscle="Abs">Abs</button>
+        <button class="muscle-button" data-muscle="Shoulders">Shoulders</button>
+        <button class="muscle-button" data-muscle="Legs">Legs</button>
+        <button class="muscle-button" data-muscle="Back">Back</button>
+        <button class="muscle-button" data-muscle="Triceps">Triceps</button>
+        <button class="muscle-button" data-muscle="Biceps">Biceps</button>
+      </div>
+      <h3>Select Workout Level</h3>
+      <div class="workout-levels hidden">
+        <button class="level-button">Beginner</button>
+        <button class="level-button">Intermediate</button>
+        <button class="level-button">Advanced</button>
+      </div>
+      <h3 id="exerciseTitle" class="hidden">Select Exercise</h3>
+      <div id="exerciseList" class="exercise-list hidden"></div>
+    </div>
+
+    <!-- Fitness Tracker Section -->
+    <div id="fitnessTracker" class="hidden">
+      <h2>Enter Your Exercise Details</h2>
+      <form>
+        <label for="bodyWeight">Body Weight (kg):</label>
+        <input type="number" id="bodyWeight" name="bodyWeight" required>
+
+        <label for="exerciseWeight">Weight Used (kg):</label>
+        <input type="number" id="exerciseWeight" name="exerciseWeight" required>
+
+        <label for="reps">Reps:</label>
+        <input type="number" id="reps" name="reps" required>
+
+        <label for="exerciseName">Exercise:</label>
+        <input type="text" id="exerciseName" name="exerciseName" required>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="pg2.js"></script>
+</body>
+</html>
